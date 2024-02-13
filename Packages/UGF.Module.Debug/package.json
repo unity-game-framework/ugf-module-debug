@@ -1,0 +1,22 @@
+{
+  "name": "com.ugf.module.debug",
+  "displayName": "UGF.Module.Debug",
+  "version": "0.0.0-preview",
+  "unity": "2023.2",
+  "apiCompatibility": ".NET Standard 2.1",
+  "description": "Module to manage Debug tools.",
+  "author": {
+    "name": "Unity Game Framework",
+    "url": "https://github.com/unity-game-framework"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/unity-game-framework/ugf-module-debug.git"
+  },
+  "changelogUrl": "https://github.com/unity-game-framework/ugf-module-debug/blob/main/changelog.md",
+  "licensesUrl": "https://github.com/unity-game-framework/ugf-module-debug/blob/main/license",
+  "publishConfig": {
+    "registry": "https://api.upmhub.org/registries/unity-game-framework"
+  },
+  "dependencies": {}
+}
