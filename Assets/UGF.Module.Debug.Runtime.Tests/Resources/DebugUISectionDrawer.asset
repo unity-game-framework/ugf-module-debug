@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e42efd3d2cfe48488c9be47c649411d2, type: 3}
+  m_Name: DebugUISectionDrawer
+  m_EditorClassIdentifier: 
+  m_width: 200
+  m_height: 200
+  m_alignment: 2
+  m_sections:
+  - m_guid:
+      m_first: 1802693711736305514
+      m_second: 6565307821626465080
+    m_asset: {fileID: 11400000, guid: 36df776a74611904389b23e5ada81c5b, type: 2}
+  - m_guid:
+      m_first: 6360337163946589334
+      m_second: 11070164890964247002
+    m_asset: {fileID: 11400000, guid: bcc07c9674f35844dac1ecea5020a199, type: 2}
+  - m_guid:
+      m_first: 8206784945928886925
+      m_second: 15605937413679053434
+    m_asset: {fileID: 11400000, guid: 4a1d5a8d5b6d71e47a7a51d9646d93d8, type: 2}
+  - m_guid:
+      m_first: 17560856769910571805
+      m_second: 493855342367418746
+    m_asset: {fileID: 11400000, guid: da08831db230f3b47a293d3cd186da06, type: 2}
