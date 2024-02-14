@@ -1,5 +1,6 @@
 ﻿using System.Threading.Tasks;
 using UGF.Application.Runtime;
+using UGF.Logs.Runtime;
 using UGF.Module.Assets.Runtime;
 
 namespace UGF.Module.Debug.Runtime
@@ -27,11 +28,15 @@ namespace UGF.Module.Debug.Runtime
             {
                 if (Description.HasDebugUIProviderId)
                 {
+                    Log.Debug("Debug module load UI provider.");
+
                     DebugGLComponent.Load(Description.DebugUIProviderId);
                 }
 
                 if (Description.HasDebugGLProviderId)
                 {
+                    Log.Debug("Debug module load GL provider.");
+
                     DebugGLComponent.Load(Description.DebugGLProviderId);
                 }
             }
@@ -45,11 +50,15 @@ namespace UGF.Module.Debug.Runtime
             {
                 if (!DebugUIComponent.IsLoaded && Description.HasDebugUIProviderId)
                 {
+                    Log.Debug("Debug module load UI provider.");
+
                     await DebugUIComponent.LoadAsync(Description.DebugUIProviderId);
                 }
 
                 if (!DebugGLComponent.IsLoaded && Description.HasDebugGLProviderId)
                 {
+                    Log.Debug("Debug module load GL provider.");
+
                     await DebugGLComponent.LoadAsync(Description.DebugGLProviderId);
                 }
             }
@@ -61,11 +70,15 @@ namespace UGF.Module.Debug.Runtime
 
             if (DebugUIComponent.IsLoaded)
             {
+                Log.Debug("Debug module unload UI provider.");
+
                 DebugUIComponent.Unload();
             }
 
             if (DebugGLComponent.IsLoaded)
             {
+                Log.Debug("Debug module unload GL provider.");
+
                 DebugGLComponent.Unload();
             }
         }
