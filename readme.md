@@ -4,13 +4,14 @@ UGF.Module.Debug
 
 ## Information
 
-- **Version**: `0.0.0-preview`
+- **Version**: `1.0.0-preview`
 - **Unity**: `2023.2`
 - **API Compatibility Level**: `.NET Standard 2.1`
 
 ### Dependencies
 
-- N/A
+- `com.ugf.module.assets`: `6.0.0-preview.1`
+- `com.ugf.debugtools`: `2.0.0-preview`
 
 
 ### Description
