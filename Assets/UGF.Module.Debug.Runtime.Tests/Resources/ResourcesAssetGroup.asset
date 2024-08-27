@@ -13,14 +13,14 @@ MonoBehaviour:
   m_Name: ResourcesAssetGroup
   m_EditorClassIdentifier: 
   m_loader:
-    m_first: 16732163126295976334
-    m_second: 16217050548629266184
+    serializedVersion: 2
+    Hash: 6ac2d98e95b6e83408df99678d890ee1
   m_assets:
   - m_id:
-      m_first: 4819999862397090542
-      m_second: 5539043939814886762
+      serializedVersion: 2
+      Hash: 5f9c3aee145642e46a4df2bb1da3de4c
     m_address: DebugUIProvider
   - m_id:
-      m_first: 15025166992651042692
-      m_second: 5009580221517959370
+      serializedVersion: 2
+      Hash: e7e3bf841dc5d084ca906669ab9a8545
     m_address: DebugGLProvider

@@ -9,6 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2fa68432b86f4196b9ae14b28fa6c4fc, type: 3}
-  m_Name: DebugGLOptionsSection
+  m_Script: {fileID: 11500000, guid: ab278e66c6444b67b2ad2cec1ec398f1, type: 3}
+  m_Name: DebugUIMenuElement
   m_EditorClassIdentifier: 
+  m_displayName: Debug Menu
+  m_menu:
+  - m_name: Log
+    m_element: {fileID: 11400000, guid: 51d97f74422319541811a7d98f33d6c7, type: 2}

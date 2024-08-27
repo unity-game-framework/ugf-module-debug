@@ -12,19 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d0fa9b121f64e1f83b28ca10e31f731, type: 3}
   m_Name: DebugUIProvider
   m_EditorClassIdentifier: 
-  m_enable: 1
-  m_scale: 1.5
-  m_skin: {fileID: 11400000, guid: b93603fb1566059489fcd9c0026e3369, type: 2}
-  m_drawers:
+  m_documentGameObjectName: DebugUIDocument
+  m_panelSettings: {fileID: 11400000, guid: 74798e5e897a47c44bc55a392d997524, type: 2}
+  m_elements:
   - m_guid:
-      m_first: 15727821575757029228
-      m_second: 8385386949216582314
-    m_asset: {fileID: 11400000, guid: c1b8df6c7264da44aa3a40ac00e15e74, type: 2}
+      serializedVersion: 2
+      Hash: 53076b7182051144e82cda61189d6f49
+    m_asset: {fileID: 11400000, guid: 53076b7182051144e82cda61189d6f49, type: 2}
   - m_guid:
-      m_first: 6207162751922327725
-      m_second: 7656559097412661099
-    m_asset: {fileID: 11400000, guid: cb5dd0ad45a256246b2f11d3ee8f416a, type: 2}
-  - m_guid:
-      m_first: 5810798431464558937
-      m_second: 1757590519021971801
-    m_asset: {fileID: 11400000, guid: f0d791591a6250a45929e6d243376418, type: 2}
+      serializedVersion: 2
+      Hash: 762406908d604ca448c50c83638ec3e6
+    m_asset: {fileID: 11400000, guid: 762406908d604ca448c50c83638ec3e6, type: 2}

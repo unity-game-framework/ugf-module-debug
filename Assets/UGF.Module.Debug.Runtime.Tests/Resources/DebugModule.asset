@@ -17,8 +17,8 @@ MonoBehaviour:
   m_debugUIGameObjectName: DebugUI
   m_debugGLGameObjectName: DebugGL
   m_debugUIProvider:
-    m_first: 4819999862397090542
-    m_second: 5539043939814886762
+    serializedVersion: 2
+    Hash: 5f9c3aee145642e46a4df2bb1da3de4c
   m_debugGLProvider:
-    m_first: 15025166992651042692
-    m_second: 5009580221517959370
+    serializedVersion: 2
+    Hash: e7e3bf841dc5d084ca906669ab9a8545
