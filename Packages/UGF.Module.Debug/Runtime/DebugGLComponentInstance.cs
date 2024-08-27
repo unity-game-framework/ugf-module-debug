@@ -1,5 +1,5 @@
 ﻿using UGF.Application.Runtime;
-using UGF.DebugTools.Runtime;
+using UGF.DebugTools.Runtime.GL;
 
 namespace UGF.Module.Debug.Runtime
 {

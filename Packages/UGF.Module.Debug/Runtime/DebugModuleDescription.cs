@@ -19,13 +19,12 @@ namespace UGF.Module.Debug.Runtime
         private readonly GlobalId? m_debugGLProviderId;
 
         public DebugModuleDescription(
-            Type registerType,
             bool debugComponentLoadOnInitialize,
             bool debugComponentLoadOnInitializeAsync,
             string debugUIGameObjectName,
             string debugGLGameObjectName,
             GlobalId? debugUIProviderId,
-            GlobalId? debugGLProviderId) : base(registerType)
+            GlobalId? debugGLProviderId)
         {
             if (string.IsNullOrEmpty(debugUIGameObjectName)) throw new ArgumentException("Value cannot be null or empty.", nameof(debugUIGameObjectName));
             if (string.IsNullOrEmpty(debugGLGameObjectName)) throw new ArgumentException("Value cannot be null or empty.", nameof(debugGLGameObjectName));
