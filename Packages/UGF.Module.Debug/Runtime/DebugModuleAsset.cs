@@ -1,5 +1,6 @@
 ﻿using UGF.Application.Runtime;
-using UGF.DebugTools.Runtime;
+using UGF.DebugTools.Runtime.GL;
+using UGF.DebugTools.Runtime.UI;
 using UGF.EditorTools.Runtime.Assets;
 using UGF.EditorTools.Runtime.Ids;
 using UnityEngine;
@@ -14,9 +15,9 @@ namespace UGF.Module.Debug.Runtime
         [SerializeField] private string m_debugUIGameObjectName = "DebugUI";
         [SerializeField] private string m_debugGLGameObjectName = "DebugGL";
         [AssetId(typeof(DebugUIProviderAsset))]
-        [SerializeField] private GlobalId m_debugUIProvider;
+        [SerializeField] private Hash128 m_debugUIProvider;
         [AssetId(typeof(DebugGLProviderAsset))]
-        [SerializeField] private GlobalId m_debugGLProvider;
+        [SerializeField] private Hash128 m_debugGLProvider;
 
         public bool DebugComponentLoadOnInitialize { get { return m_debugComponentLoadOnInitialize; } set { m_debugComponentLoadOnInitialize = value; } }
         public bool DebugComponentLoadOnInitializeAsync { get { return m_debugComponentLoadOnInitializeAsync; } set { m_debugComponentLoadOnInitializeAsync = value; } }
@@ -25,16 +26,15 @@ namespace UGF.Module.Debug.Runtime
         public GlobalId DebugUIProvider { get { return m_debugUIProvider; } set { m_debugUIProvider = value; } }
         public GlobalId DebugGLProvider { get { return m_debugGLProvider; } set { m_debugGLProvider = value; } }
 
-        protected override IApplicationModuleDescription OnBuildDescription()
+        protected override DebugModuleDescription OnBuildDescription()
         {
             return new DebugModuleDescription(
-                typeof(DebugModule),
                 m_debugComponentLoadOnInitialize,
                 m_debugComponentLoadOnInitializeAsync,
                 m_debugUIGameObjectName,
                 m_debugGLGameObjectName,
-                m_debugUIProvider.IsValid() ? m_debugUIProvider : null,
-                m_debugGLProvider.IsValid() ? m_debugGLProvider : null
+                m_debugUIProvider.isValid ? m_debugUIProvider : null,
+                m_debugGLProvider.isValid ? m_debugGLProvider : null
             );
         }
 

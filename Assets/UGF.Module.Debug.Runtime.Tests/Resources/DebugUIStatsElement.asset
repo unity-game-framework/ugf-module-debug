@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ae4bc8fa71d48849ee52ed74f5ca4a0, type: 3}
-  m_Name: DebugUIPanelDrawer
+  m_Script: {fileID: 11500000, guid: 92f97b728620455aa83259a9993e5890, type: 3}
+  m_Name: DebugUIStatsElement
   m_EditorClassIdentifier: 
-  m_display: 1
+  m_updateInterval: 10000000
